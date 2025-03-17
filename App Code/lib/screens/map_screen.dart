@@ -23,7 +23,7 @@ class _MapScreenState extends State<MapScreen> {
   bool _checkingAfterSettings = false;
   final TextEditingController _searchController = TextEditingController();
 
-  static const String _mapsApiKey = 'AIzaSyCKgmnMiSsAKelVX9pwrdoAJW92zFsxTco';
+  static const String _mapsApiKey = 'Your API';
 
   @override
   void initState() {
