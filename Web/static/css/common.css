@@ -1,0 +1,235 @@
+/* static/css/common.css */
+:root {
+    --eco-primary: #2ecc71;
+    --eco-primary-dark: #27ae60;
+    --eco-secondary: #8e7b5e;
+    --eco-accent: #3498db;
+    --eco-text: #2c3e50;
+    --eco-bg: #f8f9fa;
+    --eco-border: #dee2e6;
+    --eco-red: #ff0000;
+  }
+  
+  /* Base Styles */
+  body {
+    background-color: var(--eco-bg);
+    font-family: 'Poppins', sans-serif;
+    color: var(--eco-text);
+  }
+  
+  /* Enhanced Navigation */
+  .navbar {
+    background: linear-gradient(135deg, var(--eco-primary-dark), var(--eco-primary)) !important;
+    box-shadow: 0 4px 15px rgba(46, 204, 113, 0.1);
+  }
+  
+  .navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+  }
+  
+  .nav-link {
+    font-weight: 500;
+    padding: 0.5rem 1.2rem !important;
+    border-radius: 8px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    color: rgba(255, 255, 255, 0.85) !important;
+  }
+  
+  .nav-link.active {
+    background: rgba(255, 255, 255, 0.15) !important;
+    color: #fff !important;
+  }
+  
+  /* Form Styling */
+  .form-container {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+    margin: 2rem auto;
+    max-width: 800px;
+  }
+  
+  .form-label {
+    font-weight: 600;
+    color: var(--eco-primary-dark);
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-control, .form-select {
+    border: 2px solid var(--eco-border);
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .form-control:focus, .form-select:focus {
+    border-color: var(--eco-primary);
+    box-shadow: 0 0 0 3px rgba(46, 204, 113, 0.25);
+  }
+  
+  textarea.form-control {
+    min-height: 120px;
+    resize: vertical;
+  }
+  
+  /* Icon Grid */
+  .icon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+  }
+  
+  .icon-option {
+    padding: 1.5rem;
+    border: 2px solid var(--eco-border);
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    background: white;
+  }
+  
+  .icon-option:hover {
+    transform: translateY(-3px);
+    border-color: var(--eco-primary);
+    box-shadow: 0 6px 15px rgba(46, 204, 113, 0.1);
+  }
+  
+  .icon-option.selected {
+    border-color: var(--eco-primary);
+    background: rgba(46, 204, 113, 0.05);
+    box-shadow: 0 4px 12px rgba(46, 204, 113, 0.15);
+  }
+  
+  .material-icons.md-48 {
+    font-size: 56px;
+    color: var(--eco-primary);
+    margin-bottom: 0.75rem;
+    transition: color 0.3s ease;
+  }
+  
+  /* Buttons */
+  .btn-primary {
+    background-color: var(--eco-primary) !important;
+    display: inline-block;
+    font-size: .8rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    outline: none;
+  }
+
+  .btn-c{
+    background-color: var(--eco-red) !important;
+    display: inline-block;
+    font-size: .8rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    outline: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--eco-primary-dark) !important;
+    transform: translateY(-2px);
+  }
+  
+  .btn-secondary {
+    background-color: var(--eco-secondary) !important;
+    border: none !important;
+  }
+  
+  /* Table Enhancements */
+  .table {
+    border-collapse: separate;
+    border-spacing: 0 8px;
+    margin: 1.5rem 0;
+  }
+  
+  .table thead th {
+    background-color: var(--eco-primary);
+    color: white;
+    padding: 1.2rem 1.5rem;
+    border: none;
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+  }
+  
+  .table tbody td {
+    padding: 1rem 1.5rem;
+    vertical-align: middle;
+    background-color: white;
+    border-top: 1px solid var(--eco-border);
+    border-bottom: 1px solid var(--eco-border);
+  }
+  
+  .table tbody tr:hover td {
+    background-color: #f1f8f1;
+    transform: scale(1.02);
+    box-shadow: 0 4px 15px rgba(46, 204, 113, 0.1);
+  }
+  
+  /* DataTables Customization */
+  .dataTables_wrapper {
+    margin-top: 1.5rem;
+  }
+  
+  .dataTables_filter input {
+    border: 2px solid var(--eco-primary) !important;
+    border-radius: 8px !important;
+    padding: 0.5rem 1rem !important;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .icon-grid {
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+    
+    .form-container {
+      padding: 1.5rem;
+      margin: 1rem;
+    }
+    
+    .table-responsive {
+      border: 1px solid var(--eco-border);
+      border-radius: 8px;
+    }
+  }
+  
+  /* Utility Classes */
+  .eco-badge {
+    background-color: var(--eco-primary);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .text-eco {
+    color: var(--eco-primary-dark);
+  }
+  
+  h2 {
+    color: var(--eco-primary-dark);
+    font-weight: 700;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid var(--eco-primary);
+  }
