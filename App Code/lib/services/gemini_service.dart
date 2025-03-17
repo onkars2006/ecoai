@@ -4,7 +4,7 @@ import 'dart:io';
 import 'package:http/http.dart' as http;
 
 class GeminiService {
-  final _apiKey = 'AIzaSyD-BFv4lgb7M_eDF62-k_6dSjTNVwW8ltI';
+  final _apiKey = 'YOUR API KEY ';
   final _baseUrl = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent';
 
   
