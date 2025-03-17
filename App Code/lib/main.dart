@@ -15,7 +15,7 @@ void main() async {
   try {
     await Firebase.initializeApp(
       options: const FirebaseOptions(
-        apiKey: "AIzaSyBPzKQ1ax4gbemIANN4r-YN9zyVwRlkAaQ",
+        apiKey: "VwRlkAaQ",
         appId: "1:455109181238:android:d1c36eaf7fda1121cc7d97",
         messagingSenderId: "455109181238",
         projectId: "ecoscan-3935e",
