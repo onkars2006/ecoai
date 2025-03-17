@@ -16,12 +16,12 @@ void main() async {
     await Firebase.initializeApp(
       options: const FirebaseOptions(
         apiKey: "VwRlkAaQ",
-        appId: "1:455109181238:android:d1c36eaf7fda1121cc7d97",
-        messagingSenderId: "455109181238",
-        projectId: "ecoscan-3935e",
-        storageBucket: "ecoscan-3935e.appspot.com",
-        authDomain: "ecoscan-3935e.firebaseapp.com",
-        databaseURL: "https://ecoscan-3935e.firebaseio.com",
+        appId: "1:45510",
+        messagingSenderId: "",
+        projectId: "ecosc",
+        storageBucket: "eco.appspot.com",
+        authDomain: "ecoscan-3.com",
+        databaseURL: "https://ecoscan-aseio.com",
       ),
     );
     runApp(
