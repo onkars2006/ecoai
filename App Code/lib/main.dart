@@ -15,13 +15,13 @@ void main() async {
   try {
     await Firebase.initializeApp(
       options: const FirebaseOptions(
-        apiKey: "VwRlkAaQ",
-        appId: "1:45510",
+        apiKey: "apiKey",
+        appId: "appId",
         messagingSenderId: "",
-        projectId: "ecosc",
-        storageBucket: "eco.appspot.com",
-        authDomain: "ecoscan-3.com",
-        databaseURL: "https://ecoscan-aseio.com",
+        projectId: "projectId",
+        storageBucket: "storageBucket",
+        authDomain: "authDomain",
+        databaseURL: "https://databaseURL",
       ),
     );
     runApp(
